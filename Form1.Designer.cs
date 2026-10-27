@@ -54,7 +54,6 @@
             this.grpOut3 = new System.Windows.Forms.GroupBox();
             this.lbl3X = new System.Windows.Forms.Label();
             this.txt3X = new System.Windows.Forms.TextBox();
-            this.pnl3 = new System.Windows.Forms.Panel();
             this.lblRes3 = new System.Windows.Forms.Label();
             this.tab4 = new System.Windows.Forms.TabPage();
             this.lblTitle4 = new System.Windows.Forms.Label();
@@ -136,7 +135,6 @@
             this.txt10H = new System.Windows.Forms.TextBox();
             this.lbl10Info = new System.Windows.Forms.Label();
             this.lblRes10 = new System.Windows.Forms.Label();
-            this.pnl10 = new System.Windows.Forms.Panel();
             this.tab11 = new System.Windows.Forms.TabPage();
             this.lblTitle11 = new System.Windows.Forms.Label();
             this.grpIn11 = new System.Windows.Forms.GroupBox();
@@ -144,9 +142,6 @@
             this.grpOut11 = new System.Windows.Forms.GroupBox();
             this.lbl11T = new System.Windows.Forms.Label();
             this.txt11T = new System.Windows.Forms.TextBox();
-            this.grp11Unit = new System.Windows.Forms.GroupBox();
-            this.rb11C = new System.Windows.Forms.RadioButton();
-            this.rb11F = new System.Windows.Forms.RadioButton();
             this.lblRes11 = new System.Windows.Forms.Label();
             this.tab12 = new System.Windows.Forms.TabPage();
             this.lblTitle12 = new System.Windows.Forms.Label();
@@ -174,7 +169,6 @@
             this.lbl14Y = new System.Windows.Forms.Label();
             this.txt14Y = new System.Windows.Forms.TextBox();
             this.lblRes14 = new System.Windows.Forms.Label();
-            this.pnl14 = new System.Windows.Forms.Panel();
             this.tab15 = new System.Windows.Forms.TabPage();
             this.lblTitle15 = new System.Windows.Forms.Label();
             this.grpIn15 = new System.Windows.Forms.GroupBox();
@@ -183,7 +177,6 @@
             this.lbl15S = new System.Windows.Forms.Label();
             this.txt15S = new System.Windows.Forms.TextBox();
             this.chk15Card = new System.Windows.Forms.CheckBox();
-            this.chk15Student = new System.Windows.Forms.CheckBox();
             this.lbl15Info = new System.Windows.Forms.Label();
             this.lblRes15 = new System.Windows.Forms.Label();
             this.tabMain.SuspendLayout();
@@ -224,7 +217,6 @@
             this.tab11.SuspendLayout();
             this.grpIn11.SuspendLayout();
             this.grpOut11.SuspendLayout();
-            this.grp11Unit.SuspendLayout();
             this.tab12.SuspendLayout();
             this.grpIn12.SuspendLayout();
             this.grpOut12.SuspendLayout();
@@ -390,7 +382,7 @@
             this.lblTitle2.Name = "lblTitle2";
             this.lblTitle2.Size = new System.Drawing.Size(850, 52);
             this.lblTitle2.TabIndex = 0;
-            this.lblTitle2.Text = "ამოცანა 2. დაადგინეთ, მთელი რიცხვი ლუწია თუ კენტი და იყოფა თუ არა 3-ზე უნაშთოდ.";
+            this.lblTitle2.Text = "ამოცანა 2. დაადგინეთ, მთელი რიცხვი ლუწია თუ კენტი.";
             // 
             // grpIn2
             // 
@@ -490,7 +482,7 @@
             this.lblTitle3.Name = "lblTitle3";
             this.lblTitle3.Size = new System.Drawing.Size(850, 52);
             this.lblTitle3.TabIndex = 0;
-            this.lblTitle3.Text = "ამოცანა 3. დაადგინეთ, რიცხვი დადებითია, უარყოფითი თუ ნულის ტოლი. შედეგის მიხედვით იცვლება ფერიც.";
+            this.lblTitle3.Text = "ამოცანა 3. დაადგინეთ, რიცხვი დადებითია, უარყოფითი თუ ნულის ტოლი.";
             // 
             // grpIn3
             // 
@@ -520,7 +512,6 @@
             // 
             // grpOut3
             // 
-            this.grpOut3.Controls.Add(this.pnl3);
             this.grpOut3.Controls.Add(this.lblRes3);
             this.grpOut3.Location = new System.Drawing.Point(420, 75);
             this.grpOut3.Name = "grpOut3";
@@ -544,23 +535,14 @@
             this.txt3X.Size = new System.Drawing.Size(190, 25);
             this.txt3X.TabIndex = 1;
             // 
-            // pnl3
-            // 
-            this.pnl3.BackColor = System.Drawing.Color.Gainsboro;
-            this.pnl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl3.Location = new System.Drawing.Point(15, 35);
-            this.pnl3.Name = "pnl3";
-            this.pnl3.Size = new System.Drawing.Size(70, 70);
-            this.pnl3.TabIndex = 0;
-            // 
             // lblRes3
             // 
             this.lblRes3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRes3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblRes3.Location = new System.Drawing.Point(100, 30);
+            this.lblRes3.Location = new System.Drawing.Point(15, 30);
             this.lblRes3.Name = "lblRes3";
-            this.lblRes3.Size = new System.Drawing.Size(335, 190);
-            this.lblRes3.TabIndex = 1;
+            this.lblRes3.Size = new System.Drawing.Size(420, 190);
+            this.lblRes3.TabIndex = 0;
             this.lblRes3.Text = "შედეგი აქ გამოჩნდება";
             // 
             // tab4
@@ -927,7 +909,7 @@
             this.lblTitle7.Name = "lblTitle7";
             this.lblTitle7.Size = new System.Drawing.Size(850, 52);
             this.lblTitle7.TabIndex = 0;
-            this.lblTitle7.Text = "ამოცანა 7. სამი გვერდით დაადგინეთ, არსებობს თუ არა სამკუთხედი და რა სახისაა. გამოთვალეთ პერიმეტრი და ფართობი.";
+            this.lblTitle7.Text = "ამოცანა 7. სამი გვერდით დაადგინეთ, არსებობს თუ არა სამკუთხედი და რა სახისაა. გამოთვალეთ პერიმეტრი.";
             // 
             // grpIn7
             // 
@@ -1355,7 +1337,6 @@
             // grpOut10
             // 
             this.grpOut10.Controls.Add(this.lblRes10);
-            this.grpOut10.Controls.Add(this.pnl10);
             this.grpOut10.Location = new System.Drawing.Point(420, 75);
             this.grpOut10.Name = "grpOut10";
             this.grpOut10.Size = new System.Drawing.Size(450, 235);
@@ -1409,18 +1390,9 @@
             this.lblRes10.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lblRes10.Location = new System.Drawing.Point(15, 30);
             this.lblRes10.Name = "lblRes10";
-            this.lblRes10.Size = new System.Drawing.Size(420, 110);
+            this.lblRes10.Size = new System.Drawing.Size(420, 190);
             this.lblRes10.TabIndex = 0;
             this.lblRes10.Text = "შედეგი აქ გამოჩნდება";
-            // 
-            // pnl10
-            // 
-            this.pnl10.BackColor = System.Drawing.Color.Gainsboro;
-            this.pnl10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl10.Location = new System.Drawing.Point(15, 150);
-            this.pnl10.Name = "pnl10";
-            this.pnl10.Size = new System.Drawing.Size(420, 65);
-            this.pnl10.TabIndex = 1;
             // 
             // tab11
             // 
@@ -1444,13 +1416,12 @@
             this.lblTitle11.Name = "lblTitle11";
             this.lblTitle11.Size = new System.Drawing.Size(850, 52);
             this.lblTitle11.TabIndex = 0;
-            this.lblTitle11.Text = "ამოცანა 11. ტემპერატურის მიხედვით დაადგინეთ წყლის მდგომარეობა: ყინული, თხევადი წყალი თუ ორთქლი.";
+            this.lblTitle11.Text = "ამოცანა 11. ტემპერატურის (°C) მიხედვით დაადგინეთ წყლის მდგომარეობა: ყინული, თხევადი წყალი თუ ორთქლი.";
             // 
             // grpIn11
             // 
             this.grpIn11.Controls.Add(this.lbl11T);
             this.grpIn11.Controls.Add(this.txt11T);
-            this.grpIn11.Controls.Add(this.grp11Unit);
             this.grpIn11.Location = new System.Drawing.Point(20, 75);
             this.grpIn11.Name = "grpIn11";
             this.grpIn11.Size = new System.Drawing.Size(380, 235);
@@ -1489,7 +1460,7 @@
             this.lbl11T.Name = "lbl11T";
             this.lbl11T.Size = new System.Drawing.Size(150, 23);
             this.lbl11T.TabIndex = 0;
-            this.lbl11T.Text = "ტემპერატურა:";
+            this.lbl11T.Text = "ტემპერატურა (°C):";
             // 
             // txt11T
             // 
@@ -1497,38 +1468,6 @@
             this.txt11T.Name = "txt11T";
             this.txt11T.Size = new System.Drawing.Size(190, 25);
             this.txt11T.TabIndex = 1;
-            // 
-            // grp11Unit
-            // 
-            this.grp11Unit.Controls.Add(this.rb11C);
-            this.grp11Unit.Controls.Add(this.rb11F);
-            this.grp11Unit.Location = new System.Drawing.Point(15, 85);
-            this.grp11Unit.Name = "grp11Unit";
-            this.grp11Unit.Size = new System.Drawing.Size(350, 75);
-            this.grp11Unit.TabIndex = 2;
-            this.grp11Unit.Text = "ერთეული";
-            // 
-            // rb11C
-            // 
-            this.rb11C.AutoSize = true;
-            this.rb11C.Checked = true;
-            this.rb11C.Location = new System.Drawing.Point(20, 32);
-            this.rb11C.Name = "rb11C";
-            this.rb11C.Size = new System.Drawing.Size(120, 23);
-            this.rb11C.TabIndex = 0;
-            this.rb11C.TabStop = true;
-            this.rb11C.Text = "°C ცელსიუსი";
-            this.rb11C.UseVisualStyleBackColor = true;
-            // 
-            // rb11F
-            // 
-            this.rb11F.AutoSize = true;
-            this.rb11F.Location = new System.Drawing.Point(180, 32);
-            this.rb11F.Name = "rb11F";
-            this.rb11F.Size = new System.Drawing.Size(140, 23);
-            this.rb11F.TabIndex = 1;
-            this.rb11F.Text = "°F ფარენჰაიტი";
-            this.rb11F.UseVisualStyleBackColor = true;
             // 
             // lblRes11
             // 
@@ -1647,7 +1586,7 @@
             this.lblTitle13.Name = "lblTitle13";
             this.lblTitle13.Size = new System.Drawing.Size(850, 52);
             this.lblTitle13.TabIndex = 0;
-            this.lblTitle13.Text = "ამოცანა 13. არჩეული თარიღის მიხედვით დაადგინეთ წელიწადის დრო და თვეში დღეების რაოდენობა.";
+            this.lblTitle13.Text = "ამოცანა 13. არჩეული თარიღის მიხედვით დაადგინეთ წელიწადის დრო.";
             // 
             // grpIn13
             // 
@@ -1766,7 +1705,6 @@
             // grpOut14
             // 
             this.grpOut14.Controls.Add(this.lblRes14);
-            this.grpOut14.Controls.Add(this.pnl14);
             this.grpOut14.Location = new System.Drawing.Point(420, 75);
             this.grpOut14.Name = "grpOut14";
             this.grpOut14.Size = new System.Drawing.Size(450, 235);
@@ -1809,21 +1747,11 @@
             // 
             this.lblRes14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRes14.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblRes14.Location = new System.Drawing.Point(15, 28);
+            this.lblRes14.Location = new System.Drawing.Point(15, 30);
             this.lblRes14.Name = "lblRes14";
-            this.lblRes14.Size = new System.Drawing.Size(420, 50);
+            this.lblRes14.Size = new System.Drawing.Size(420, 190);
             this.lblRes14.TabIndex = 0;
             this.lblRes14.Text = "შედეგი აქ გამოჩნდება";
-            // 
-            // pnl14
-            // 
-            this.pnl14.BackColor = System.Drawing.Color.White;
-            this.pnl14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl14.Location = new System.Drawing.Point(15, 82);
-            this.pnl14.Name = "pnl14";
-            this.pnl14.Size = new System.Drawing.Size(420, 140);
-            this.pnl14.TabIndex = 1;
-            this.pnl14.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl14_Paint);
             // 
             // tab15
             // 
@@ -1847,14 +1775,13 @@
             this.lblTitle15.Name = "lblTitle15";
             this.lblTitle15.Size = new System.Drawing.Size(850, 52);
             this.lblTitle15.TabIndex = 0;
-            this.lblTitle15.Text = "ამოცანა 15. მაღაზიის ფასდაკლება: თანხის, ბარათისა და სტატუსის მიხედვით გამოთვალეთ გადასახდელი თანხა (მაქსიმუმ 20%).";
+            this.lblTitle15.Text = "ამოცანა 15. მაღაზიის ფასდაკლება: თანხისა და ლოიალობის ბარათის მიხედვით გამოთვალეთ გადასახდელი თანხა.";
             // 
             // grpIn15
             // 
             this.grpIn15.Controls.Add(this.lbl15S);
             this.grpIn15.Controls.Add(this.txt15S);
             this.grpIn15.Controls.Add(this.chk15Card);
-            this.grpIn15.Controls.Add(this.chk15Student);
             this.grpIn15.Controls.Add(this.lbl15Info);
             this.grpIn15.Location = new System.Drawing.Point(20, 75);
             this.grpIn15.Name = "grpIn15";
@@ -1913,23 +1840,13 @@
             this.chk15Card.Text = "ლოიალობის ბარათი (+5%)";
             this.chk15Card.UseVisualStyleBackColor = true;
             // 
-            // chk15Student
-            // 
-            this.chk15Student.AutoSize = true;
-            this.chk15Student.Location = new System.Drawing.Point(15, 120);
-            this.chk15Student.Name = "chk15Student";
-            this.chk15Student.Size = new System.Drawing.Size(150, 23);
-            this.chk15Student.TabIndex = 3;
-            this.chk15Student.Text = "სტუდენტი (+3%)";
-            this.chk15Student.UseVisualStyleBackColor = true;
-            // 
             // lbl15Info
             // 
             this.lbl15Info.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl15Info.Location = new System.Drawing.Point(15, 160);
+            this.lbl15Info.Location = new System.Drawing.Point(15, 125);
             this.lbl15Info.Name = "lbl15Info";
             this.lbl15Info.Size = new System.Drawing.Size(345, 60);
-            this.lbl15Info.TabIndex = 4;
+            this.lbl15Info.TabIndex = 3;
             this.lbl15Info.Text = "100+ ლარი — 5%,  200+ — 10%,  500+ — 15%";
             // 
             // lblRes15
@@ -2026,8 +1943,6 @@
             this.grpIn11.PerformLayout();
             this.grpOut11.ResumeLayout(false);
             this.grpOut11.PerformLayout();
-            this.grp11Unit.ResumeLayout(false);
-            this.grp11Unit.PerformLayout();
             this.tab12.ResumeLayout(false);
             this.tab12.PerformLayout();
             this.grpIn12.ResumeLayout(false);
@@ -2084,7 +1999,6 @@
         private System.Windows.Forms.GroupBox grpOut3;
         private System.Windows.Forms.Label lbl3X;
         private System.Windows.Forms.TextBox txt3X;
-        private System.Windows.Forms.Panel pnl3;
         private System.Windows.Forms.Label lblRes3;
         private System.Windows.Forms.TabPage tab4;
         private System.Windows.Forms.Label lblTitle4;
@@ -2166,7 +2080,6 @@
         private System.Windows.Forms.TextBox txt10H;
         private System.Windows.Forms.Label lbl10Info;
         private System.Windows.Forms.Label lblRes10;
-        private System.Windows.Forms.Panel pnl10;
         private System.Windows.Forms.TabPage tab11;
         private System.Windows.Forms.Label lblTitle11;
         private System.Windows.Forms.GroupBox grpIn11;
@@ -2174,9 +2087,6 @@
         private System.Windows.Forms.GroupBox grpOut11;
         private System.Windows.Forms.Label lbl11T;
         private System.Windows.Forms.TextBox txt11T;
-        private System.Windows.Forms.GroupBox grp11Unit;
-        private System.Windows.Forms.RadioButton rb11C;
-        private System.Windows.Forms.RadioButton rb11F;
         private System.Windows.Forms.Label lblRes11;
         private System.Windows.Forms.TabPage tab12;
         private System.Windows.Forms.Label lblTitle12;
@@ -2204,7 +2114,6 @@
         private System.Windows.Forms.Label lbl14Y;
         private System.Windows.Forms.TextBox txt14Y;
         private System.Windows.Forms.Label lblRes14;
-        private System.Windows.Forms.Panel pnl14;
         private System.Windows.Forms.TabPage tab15;
         private System.Windows.Forms.Label lblTitle15;
         private System.Windows.Forms.GroupBox grpIn15;
@@ -2213,7 +2122,6 @@
         private System.Windows.Forms.Label lbl15S;
         private System.Windows.Forms.TextBox txt15S;
         private System.Windows.Forms.CheckBox chk15Card;
-        private System.Windows.Forms.CheckBox chk15Student;
         private System.Windows.Forms.Label lbl15Info;
         private System.Windows.Forms.Label lblRes15;
     }
